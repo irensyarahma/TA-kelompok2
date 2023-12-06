@@ -10,11 +10,11 @@
 ## TA-Kelompok2
 
 Team kelompok 2:
-1.Rita - [video persentasi](https://www.youtube.com/results?search_query=sandhika+galih).
-2.Ekel -[video persentasi](https://www.youtube.com/results?search_query=sandhika+galih).
-3.Herman -[video persentasi](https://www.youtube.com/results?search_query=sandhika+galih).
-4.Najmi -[video persentasi](https://www.youtube.com/results?search_query=sandhika+galih).
-5.Adly -[video persentasi](https://www.youtube.com/results?search_query=sandhika+galih).
+-Rita - [video persentasi](https://www.youtube.com/results?search_query=sandhika+galih).
+-Ekel -[video persentasi](https://www.youtube.com/results?search_query=sandhika+galih).
+-Herman -[video persentasi](https://www.youtube.com/results?search_query=sandhika+galih).
+-Najmi -[video persentasi](https://www.youtube.com/results?search_query=sandhika+galih).
+-Adly -[video persentasi](https://www.youtube.com/results?search_query=sandhika+galih).
 
 ## About Projek TA
 
