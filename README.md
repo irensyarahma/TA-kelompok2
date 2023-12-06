@@ -1,28 +1,21 @@
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400"></a></p>
-
-<p align="center">
-<a href="https://travis-ci.org/laravel/framework"><img src="https://travis-ci.org/laravel/framework.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
-</p>
-
 ## TA-Kelompok2
 
 Team kelompok 2:
--Rita - [video persentasi](https://www.youtube.com/results?search_query=sandhika+galih).
--Ekel -[video persentasi](https://www.youtube.com/results?search_query=sandhika+galih).
--Herman -[video persentasi](https://www.youtube.com/results?search_query=sandhika+galih).
--Najmi -[video persentasi](https://www.youtube.com/results?search_query=sandhika+galih).
--Adly -[video persentasi](https://www.youtube.com/results?search_query=sandhika+galih).
+
+-   Rita - [video persentasi](https://www.youtube.com/results?search_query=sandhika+galih).
+-   Ekel -[video persentasi](https://www.youtube.com/results?search_query=sandhika+galih).
+-   Herman -[video persentasi](https://www.youtube.com/results?search_query=sandhika+galih).
+-   Najmi -[video persentasi](https://www.youtube.com/results?search_query=sandhika+galih).
+-   Adly -[video persentasi](https://www.youtube.com/results?search_query=sandhika+galih).
 
 ## About Projek TA
 
-    projek web tanya jawab
-    -PHP : 8.2.3
-    -Framework : 1.Larvel 8
-                 2.Node js
-    -[Laravel Doc](https://laravel.com/docs/8.x/readme).
+projek web tanya jawab
+
+-   PHP : 8.2.3
+-   Framework : 1.Larvel 8
+    2.Node js
+-   [Laravel Doc](https://laravel.com/docs/8.x/readme).
 
 ## About Laravel
 
