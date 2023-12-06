@@ -19,6 +19,8 @@ projek web tanya jawab
 
 ## About Laravel
 
+-   [Laravel Installasi](https://laravel.com/docs/8.x/installation).
+-   [Login-Laravel Breeze](https://laravel.com/docs/9.x/starter-kits#laravel-breeze).
 -   [Simple, fast routing engine](https://laravel.com/docs/routing).
 -   [Powerful dependency injection container](https://laravel.com/docs/container).
 -   Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
