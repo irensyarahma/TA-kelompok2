@@ -1,6 +1,8 @@
 <?php
 
 use App\Http\Controllers\ProfileController;
+use App\Http\Controllers\userController;
+use App\Models\User;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -19,8 +21,10 @@ Route::get('/', function () {
 });
 
 Route::get('/dashboard', function () {
+    $userCount = User::count();
     return view('dashboard', [
-        'title' => 'Dashboard'
+        'title' => 'Dashboard',
+        'user' => $userCount
     ]);
 })->middleware(['auth', 'verified'])->name('dashboard');
 
@@ -28,6 +32,10 @@ Route::middleware('auth')->group(function () {
     Route::get('/profile', [ProfileController::class, 'edit'])->name('profile.edit');
     Route::patch('/profile', [ProfileController::class, 'update'])->name('profile.update');
     Route::delete('/profile', [ProfileController::class, 'destroy'])->name('profile.destroy');
+    Route::get('/users', [userController::class, 'index'])->name('datausers');
+    Route::post('/users', [userController::class, 'store'])->name('adduser');
+    Route::get('/users/{id}/hapus', [userController::class, 'hapus'])->name('delete');
+    Route::post('/users/{id}/edit', [userController::class, 'update'])->name('edituser');
 });
 
 require __DIR__ . '/auth.php';
