@@ -6,30 +6,27 @@
                 <div class="card">
                     <div class="card-header">
                         <a class="btn btn-app bg-info" data-toggle="modal" data-target="#tambahModal">
-                            <i class="fas fa-users"></i> Tambah Users
+                            <i class="fas fa-bars"></i> Tambah Kategori
                         </a>
                     </div>
                     <div class="card-body">
                         <table id="example2" class="table table-bordered table-hover">
                             <thead>
                                 <tr>
-                                    <th>Nama</th>
-                                    <th>Email</th>
+                                    <th>Nama Kategori</th>
                                     <th>Action</th>
                                 </tr>
                             </thead>
                             <tbody>
                                 @foreach ($data as $item)
                                     <tr>
-                                        <td>{{ $item->name }}</td>
-                                        <td>{{ $item->email }}
-                                        </td>
+                                        <td>{{ $item->nama_kategori }}</td>
                                         <td>
                                             <a class="btn btn-app bg-warning" data-toggle="modal"
                                                 data-target="#EditModal{{ $item->id }}">
                                                 <i class="fas fa-edit"></i> Edit
                                             </a>
-                                            <a href="{{ route('delete', ['id' => $item->id]) }}"
+                                            <a href="{{ route('deletekategori', ['id' => $item->id]) }}"
                                                 class="btn btn-app bg-danger">
                                                 <i class="fas fa-trash"></i> Hapus
                                             </a>
@@ -45,36 +42,28 @@
         </div>
     </div>
 @endsection
-<!-- Modal -->
+
+<!--Modal Tambah Kategori-->
 <div class="modal" id="tambahModal">
     <div class="modal-dialog">
         <div class="modal-content">
 
             <!-- Header Modal -->
             <div class="modal-header">
-                <h4 class="modal-title">Tambah Users</h4>
+                <h4 class="modal-title">Tambah Kategori</h4>
                 <button type="button" class="close" data-dismiss="modal">&times;</button>
             </div>
 
             <!-- Body Modal -->
             <div class="modal-body">
                 <!-- Isi modal di sini -->
-                <form method="POST" action="{{ route('adduser') }}">
+                <form method="POST" action="{{ route('addkategori') }}">
                     @csrf
                     <div class="card-body">
                         <div class="form-group">
-                            <label for="exampleInputEmail1">Nama Lengkap</label>
-                            <input type="text" name="name" class="form-control" placeholder="Enter Name">
-                        </div>
-                        <div class="form-group">
-                            <label for="exampleInputEmail1">Email address</label>
-                            <input type="email" name="email" class="form-control" id="exampleInputEmail1"
-                                placeholder="Enter email">
-                        </div>
-                        <div class="form-group">
-                            <label for="exampleInputPassword1">Password</label>
-                            <input type="password" name="password" class="form-control" id="exampleInputPassword1"
-                                placeholder="Password">
+                            <label for="exampleInputEmail1">Nama Kategori</label>
+                            <input type="text" name="nama_kategori" class="form-control"
+                                placeholder="Enter kategori">
                         </div>
                     </div>
             </div>
@@ -89,6 +78,7 @@
     </div>
 </div>
 
+<!--Modal Edit Kategori-->
 @foreach ($data as $item)
     <!-- Modal Edit -->
     <div class="modal" id="EditModal{{ $item->id }}">
@@ -97,27 +87,21 @@
 
                 <!-- Header Modal -->
                 <div class="modal-header">
-                    <h4 class="modal-title">Edit User</h4>
+                    <h4 class="modal-title">Edit Kategori</h4>
                     <button type="button" class="close" data-dismiss="modal">&times;</button>
                 </div>
 
                 <!-- Body Modal -->
                 <div class="modal-body">
                     <!-- Isi modal di sini -->
-                    <form method="POST" action="{{ route('edituser', ['id' => $item->id]) }}">
+                    <form method="POST" action="{{ route('editkategori', ['id' => $item->id]) }}">
                         @csrf
                         <div class="card-body">
                             <div class="form-group">
-                                <label for="editName{{ $item->id }}">Nama Lengkap</label>
-                                <input type="text" name="name" class="form-control"
-                                    id="editName{{ $item->id }}" placeholder="Enter Name"
-                                    value="{{ $item->name }}">
-                            </div>
-                            <div class="form-group">
-                                <label for="editEmail{{ $item->id }}">Email address</label>
-                                <input type="email" name="email" class="form-control"
-                                    id="editEmail{{ $item->id }}" placeholder="Enter email"
-                                    value="{{ $item->email }}">
+                                <label for="editKategori{{ $item->id }}">Nama Kategori</label>
+                                <input type="text" name="nama_kategori" class="form-control"
+                                    id="editName{{ $item->id }}" placeholder="Enter Kategori"
+                                    value="{{ $item->nama_kategori }}">
                             </div>
                         </div>
                 </div>
