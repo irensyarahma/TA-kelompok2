@@ -8,14 +8,29 @@ Team kelompok 2:
 -   Najmi -[video persentasi](https://www.youtube.com/results?search_query=sandhika+galih).
 -   Adly -[video persentasi](https://www.youtube.com/results?search_query=sandhika+galih).
 
+-   [Rita LInk ERD](https://drive.google.com/file/d/1pGaZ16oo5lh9LJTZZKdzNR0YZVxCgH_C/view?usp=sharing).
+-   [Ekel LInk ERD](https://drive.google.com/file/d/1pGaZ16oo5lh9LJTZZKdzNR0YZVxCgH_C/view?usp=sharing).
+-   [Herman LInk ERD](https://drive.google.com/file/d/1pGaZ16oo5lh9LJTZZKdzNR0YZVxCgH_C/view?usp=sharing).
+-   [Najmi LInk ERD](https://drive.google.com/file/d/1pGaZ16oo5lh9LJTZZKdzNR0YZVxCgH_C/view?usp=sharing).
+-   [Adly LInk ERD](https://drive.google.com/file/d/1pGaZ16oo5lh9LJTZZKdzNR0YZVxCgH_C/view?usp=sharing).
+
 ## About Projek TA
 
-projek web tanya jawab
+projek web bertanya
 
 -   PHP : 8.2.3
 -   Framework : 1.Larvel 8
     2.Node js
 -   [Laravel Doc](https://laravel.com/docs/8.x/readme).
+
+## nilai-nilai
+
+-   authentication & moddleware : Laravel Breeze plugin
+-   library : Toastr pesan return
+-   Eloquen :
+
+1. Model/pertanyaan/kategori (relasi table)
+2. Controller/pertanyaanController/index (eloquent "with table")
 
 ## About Laravel
 
