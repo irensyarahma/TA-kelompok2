@@ -53,7 +53,32 @@
                 </div>
                 <button type="submit" style="margin-top: 30px">Ajukan</button>
             </form>
+        </div>
+        <div class="container px-4 px-lg-5 text-center">
+            @foreach ($tanya as $item)
+            <div class="card" style="margin: 5px; border: 1px solid #2c2828; padding: 10px;">
+                <label for="">pertanyaan</label>
+                <div class="row" style="margin: 5px;">
+                    {{ $item->pertanyaan }}
+                </div>
 
+                <div class="row" style="margin: 5px">
+                    <label for="">Jawaban</label>
+                    {{ $item->jawab->jawaban }}
+                </div>
+
+                <div class="row" style="margin: 5px">
+                    <form action="{{ route('addJawab', ['id' => $item->id]) }}" method="POST">
+                        @csrf
+                        <div class="form-group">
+                            <label>Jawab</label>
+                            <textarea name="jawaban" class="form-control" placeholder="Enter text..."></textarea>
+                            <button type="submit">kirim</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            @endforeach
         </div>
     </header>
     <!-- About-->
