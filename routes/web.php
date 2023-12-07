@@ -1,10 +1,13 @@
 <?php
 
+use App\Http\Controllers\jawabanController;
 use App\Http\Controllers\kategoriController;
 use App\Http\Controllers\pertanyaanController;
 use App\Http\Controllers\ProfileController;
 use App\Http\Controllers\userController;
+use App\Models\jawaban;
 use App\Models\kategori;
+use App\Models\pertanyaan;
 use App\Models\User;
 use Illuminate\Support\Facades\Route;
 
@@ -21,8 +24,10 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
     $data = kategori::all();
+    $tanya = pertanyaan::with('jawab')->get();
     return view('welcome', [
-        'data' => $data
+        'data' => $data,
+        'tanya' => $tanya,
     ]);
 });
 
@@ -57,6 +62,9 @@ Route::middleware('auth')->group(function () {
     Route::get('/tanya', [pertanyaanController::class, 'index'])->name('tanya');
     Route::post('/tanya/add', [pertanyaanController::class, 'store'])->name('addtanya');
     Route::get('/tanya/{id}/hapus', [pertanyaanController::class, 'hapus'])->name('deletetanya');
+
+    //jawab
+    Route::post('/jawab/{id}', [jawabanController::class, 'store'])->name('addJawab');
 });
 
 require __DIR__ . '/auth.php';

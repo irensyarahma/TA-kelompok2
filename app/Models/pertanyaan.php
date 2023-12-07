@@ -19,4 +19,9 @@ class pertanyaan extends Model
     {
         return $this->hasOne(kategori::class, 'id', 'id_kategori');
     }
+
+    public function jawab()
+    {
+        return $this->belongsTo(jawaban::class, 'id', 'id_pertanyaan');
+    }
 }
