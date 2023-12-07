@@ -2,7 +2,7 @@
 
 Team kelompok 2:
 
--   Rita - [video persentasi](https://drive.google.com/file/d/-FftyhBdM50dspgKZH7/view?usp=sharing).
+-   Rita - [video persentasi](https://drive.google.com/file/d/1Bms1eBKsJvG3W-FftyhBdM50dspgKZH7/view?usp=sharing).
 -   Ekel -[video persentasi](https://www.youtube.com/results?search_query=sandhika+galih).
 -   Herman -[video persentasi](https://www.youtube.com/results?search_query=sandhika+galih).
 -   Najmi -[video persentasi](https://www.youtube.com/results?search_query=sandhika+galih).
