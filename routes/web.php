@@ -1,8 +1,10 @@
 <?php
 
 use App\Http\Controllers\kategoriController;
+use App\Http\Controllers\pertanyaanController;
 use App\Http\Controllers\ProfileController;
 use App\Http\Controllers\userController;
+use App\Models\kategori;
 use App\Models\User;
 use Illuminate\Support\Facades\Route;
 
@@ -18,7 +20,10 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    $data = kategori::all();
+    return view('welcome', [
+        'data' => $data
+    ]);
 });
 
 Route::get('/dashboard', function () {
@@ -47,6 +52,11 @@ Route::middleware('auth')->group(function () {
     Route::post('/kategori/add', [kategoriController::class, 'store'])->name('addkategori');
     Route::post('/kategori/{id}/edit', [kategoriController::class, 'update'])->name('editkategori');
     Route::get('/kategori/{id}/hapus', [kategoriController::class, 'hapus'])->name('deletekategori');
+
+    //pertanyaan
+    Route::get('/tanya', [pertanyaanController::class, 'index'])->name('tanya');
+    Route::post('/tanya/add', [pertanyaanController::class, 'store'])->name('addtanya');
+    Route::get('/tanya/{id}/hapus', [pertanyaanController::class, 'hapus'])->name('deletetanya');
 });
 
 require __DIR__ . '/auth.php';
