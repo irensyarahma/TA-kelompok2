@@ -8,6 +8,8 @@ Team kelompok 2:
 -   Najmi -[video persentasi](https://www.youtube.com/results?search_query=sandhika+galih).
 -   Adly -[video persentasi](https://www.youtube.com/results?search_query=sandhika+galih).
 
+## LINK ERD
+
 -   [Rita LInk ERD](https://drive.google.com/file/d/1pGaZ16oo5lh9LJTZZKdzNR0YZVxCgH_C/view?usp=sharing).
 -   [Ekel LInk ERD](https://drive.google.com/file/d/1pGaZ16oo5lh9LJTZZKdzNR0YZVxCgH_C/view?usp=sharing).
 -   [Herman LInk ERD](https://drive.google.com/file/d/1pGaZ16oo5lh9LJTZZKdzNR0YZVxCgH_C/view?usp=sharing).
@@ -27,6 +29,7 @@ projek web bertanya
 
 -   authentication & moddleware : Laravel Breeze plugin
 -   library : Toastr pesan return
+
 -   Eloquen :
 
 1. Model/pertanyaan/kategori (relasi table)
